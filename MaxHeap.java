@@ -1,4 +1,4 @@
-package cmsc351f18;
+package PACKAGENAME;
 
 // Java program to implement Max Heap
 public class MaxHeap {
@@ -7,9 +7,6 @@ public class MaxHeap {
     private int compare;
     private int maxsize;
 
-    // Constructor to initialize an
-    // empty max heap with given maximum
-    // capacity.
     public MaxHeap(int maxsize) {
         this.maxsize = maxsize;
         this.size = 0;
@@ -46,10 +43,6 @@ public class MaxHeap {
         Heap[spos] = tmp;
     }
 
-    // A recursive function to max heapify the given
-    // subtree. This function assumes that the left and
-    // right subtrees are already heapified, we only need
-    // to fix the root.
     private void maxHeapify(int pos) {
         if (!isLeaf(pos)) {
             compare ++;
@@ -123,22 +116,18 @@ public class MaxHeap {
     }
 
     public static void main(String[] arg) {
-        System.out.println("The Max Heap is ");
-        MaxHeap maxHeap = new MaxHeap(10);
-        maxHeap.insert(500);
-        maxHeap.insert(300);
-        maxHeap.insert(100);
-
-        maxHeap.print();
-
-        maxHeap.insert(200);
-
-        System.out.println("\nThe Max Heap is ");
-        maxHeap.print();
-
-        maxHeap.extractMax();
-        System.out.println("\nThe Max Heap is ");
-        maxHeap.print();
-
+        System.out.println("Add your test here");
+//         System.out.println("The Max Heap is ");
+//         MaxHeap maxHeap = new MaxHeap(10);
+//         maxHeap.insert(500);
+//         maxHeap.insert(300);
+//         maxHeap.insert(100);
+//         maxHeap.print();
+//         maxHeap.insert(200);
+//         System.out.println("\nThe Max Heap is ");
+//         maxHeap.print();
+//         maxHeap.extractMax();
+//         System.out.println("\nThe Max Heap is ");
+//         maxHeap.print();
     }
 }
