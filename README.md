@@ -1,2 +1,2 @@
-# Algorithm - martian project implementated with heap sort
+# Algorithm - martian project implemented with heap sort
 Complexity: O(nlgn)
