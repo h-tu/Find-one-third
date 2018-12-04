@@ -1,1 +1,2 @@
-# CMSC351 martian project implementation using heap sort
+# Algorithm - martian project implementated with heap sort
+Complexity: O(nlgn)
