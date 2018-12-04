@@ -1,7 +1,6 @@
-package cmsc351f18;
+package PACKAGENAME;
 
-public class MinHeap
-{
+public class MinHeap {
     private int[] Heap;
     private int size;
     private int compare;
@@ -111,20 +110,21 @@ public class MinHeap
     public int getComp() { return this.compare; }
 
     public static void main(String...arg) {
-        System.out.println("The Min Heap is ");
-        MinHeap minHeap = new MinHeap(15);
-        minHeap.insert(600);
-        minHeap.insert(1000);
-        minHeap.insert(1100);
-        minHeap.insert(800);
-        minHeap.insert(900);
-        minHeap.insert(1200);
+        System.out.println("Add your test here");
+//         System.out.println("The Min Heap is ");
+//         MinHeap minHeap = new MinHeap(15);
+//         minHeap.insert(600);
+//         minHeap.insert(1000);
+//         minHeap.insert(1100);
+//         minHeap.insert(800);
+//         minHeap.insert(900);
+//         minHeap.insert(1200);
 
-        minHeap.print();
+//         minHeap.print();
 
-        minHeap.insert(500);
+//         minHeap.insert(500);
 
-        System.out.println("\nThe Min Heap is ");
-        minHeap.print();
+//         System.out.println("\nThe Min Heap is ");
+//         minHeap.print();
     }
 }
