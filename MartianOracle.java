@@ -6,10 +6,6 @@ public class MartianOracle {
 	private MinHeap minHeap;
 	private MaxHeap maxHeap;
 
-	/**
-	 * constructor of the class
-	 * @param size The first number in the stream, denoting the total number of positive integers
-	 */
 	public MartianOracle(int size) {
 		m_totalSize = size;
 		comp = 0;
@@ -19,10 +15,6 @@ public class MartianOracle {
 		k = 0;
 	}
 
-	/**
-	 * process a positive integer
-	 * @param value The new positive integer to process
-	 */
 	public void process(int value) {
 		k ++;
 		if(maxHeap.full()){
@@ -63,10 +55,6 @@ public class MartianOracle {
 //		minHeap.print();
 	}
 	
-	/**
-	 * query the \lfloor \frac{k+2}{3} \rfloor-rd smallest value
-	 * @return The current \lfloor \frac{k+2}{3} \rfloor-rd smallest value
-	 */
 	public int query() {
 		int result;
 		int want = (k + 2)/3;
