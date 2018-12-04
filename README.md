@@ -1,2 +1,1 @@
-# Heap-sort-implementation
-CMSC351 martian project implementation
+# CMSC351 martian project implementation using heap sort
