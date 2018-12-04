@@ -1,23 +1,13 @@
-package cmsc351f18;
+package PACKAGENAME;
 
 import java.util.Random;
 
 public class PermutationGenerator {
 	final private Random m_random;
-	
-	/**
-	 * constructor. You should not modify this constructor
-	 * @param random The random source
-	 */
 	PermutationGenerator(Random random) {
 		m_random = random;
 	}
 	
-	/**
-	 * Generate a new random permutation of {1, 2, 3, ... , n}
-	 * @param n The size of the permutation
-	 * @return The new random permutation
-	 */
 	public int[] nextPermutation(int n) {
 //		System.out.println("|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|");
 //		System.out.print("|");
