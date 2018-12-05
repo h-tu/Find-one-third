@@ -1,4 +1,4 @@
-package cmsc351f18;
+package PACKAGENAME;
 
 public class MartianOracle {
     final private int m_totalSize;
@@ -9,7 +9,7 @@ public class MartianOracle {
 	public MartianOracle(int size) {
 		m_totalSize = size;
 		comp = 0;
-    	curr = 0;
+    		curr = 0;
 		minHeap = new MinHeap(2*m_totalSize/3 + 1);
 		maxHeap = new MaxHeap(m_totalSize/3 + 1);
 		k = 0;
@@ -18,7 +18,7 @@ public class MartianOracle {
 	public void process(int value) {
 		k ++;
 		if(maxHeap.full()){
-		    comp ++;
+		    	comp ++;
 			if(value < maxHeap.getRoot()){
 				minHeap.insert(maxHeap.extractMax());
 				maxHeap.insert(value);
@@ -29,7 +29,7 @@ public class MartianOracle {
 		}
 		else{
 			if(curr == 0){
-                comp ++;
+                		comp ++;
 				if(value > minHeap.getRoot()){
 					minHeap.insert(value);
 					maxHeap.insert(minHeap.extractMin());
